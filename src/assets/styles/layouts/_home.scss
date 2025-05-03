@@ -7,12 +7,19 @@ body {
   flex-direction: column;
   height: 100vh;
   margin: 0;
-  padding: 2rem;
+  padding: 2rem 4rem 2rem 4rem;
   font-family: $font-family-sans-serif;
   font-size: 16px;
   line-height: 24px;
   background-color: $uoc-bg;
   color: $uoc-corporate;
+  
+  img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    width: 20rem;
+  }
 }
 
 .uoc-container {
@@ -50,8 +57,58 @@ body {
   }
 }
 
+nav ul {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  padding: 0;
+  flex-basis: 100%;
+  margin: 1% 0%;
+}
+
+nav li a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+nav li a:hover {
+  color: $bright;
+}
+
+@media (min-width: $mqMinWidth) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.1%;
+  }
+
+  .heading nav{
+    justify-content: space-between;
+  }
+
+  nav ul {
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+  }
+  nav li {
+    flex: 0 0 auto;
+    margin: 0 1rem;
+  }
+}
 .uoc-footer {
+  display: flex;
+  justify-content: space-between;
   margin-top: 1.5rem;
   font-size: 0.75rem;
   text-align: center;
+  img{
+    width: 10rem;
+  }
 }

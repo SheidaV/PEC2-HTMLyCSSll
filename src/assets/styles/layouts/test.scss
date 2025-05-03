@@ -1,0 +1,41 @@
+$mqMinWidth: 1024px;
+
+nav ul {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+  justify-content: center; // por defecto
+}
+
+nav li {
+  padding: 0;
+  flex-basis: 100%;
+  margin: 1% 0;
+}
+
+nav li a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+@media (min-width: $mqMinWidth) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5%;
+  }
+
+  nav ul {
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+  }
+
+  nav li {
+    flex: 0 0 auto;
+    margin: 0 1rem;
+  }
+}
