@@ -152,13 +152,11 @@ img {
     h1 {
       grid-column: 1 / -1;
       font-size: 2rem;
-      color: $uoc-corporate;
     }
   
     h2 {
       grid-column: 1 / -1;
       font-size: 1.3rem;
-      color: $blue;
     }
     
     .about {
@@ -167,6 +165,5 @@ img {
       color: $grey;
     }
     
-  }
-  
+  } 
 }

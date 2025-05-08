@@ -11,18 +11,73 @@
 
 <body>
     <include src="./views/header.html"></include>
-    <div class="uoc-container">
-        <picture>
-            <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-            <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-        </picture>
-        <h1 class="uoc-title">Hello, UOC!</h1>
-        <p>
-            This is a starter template for the Advanced HTML and CSS Tools courses
-            from the Master's Program in Multimedia Applications and the Master's
-            Program in Web App and Website Development at the Universitat Oberta de
-            Catalunya.
-        </p>
+    <div>
+
+        <div>
+            <figure class="front">
+                <img src="./assets/images/Kate-Raworth-Ted-Talk-1200.jpg" alt="Asistentes a la conferencia">
+                <figcaption class="overlay">
+                    <h1>Report on the Circular Economy Conference 2025</h1>
+                    <p>by TED Conference</p>
+                </figcaption>
+            </figure>
+        </div>
+
+        <article class="article">
+            <section class="article-section">
+                <h2>Highlight moments of the conference.</h2>
+                <div class="beetween-container">
+                    <p class="bigger">These spaces encouraged collaboration among companies.</p>
+
+                    <p>During the 2025 Circular Economy Conference held in Barcelona, over 500
+                        professionals gathered to share experiences, challenges, and opportunities around sustainability
+                        and innovation.The sessions focused on key topics such as eco-design, material reuse, and the
+                        creation of more responsible business models. International experts presented real-life case
+                        studies with promising results.</p>
+                </div>
+                <blockquote class="blockquote">
+                    “Circular economy is not just an option, it’s an urgent necessity,” stated Dounia Wone, one of the
+                    keynote speakers.
+                </blockquote>
+
+                <p>In addition to talks, hands-on workshops allowed attendees to learn methodologies they could apply to
+                    their own projects. These spaces encouraged collaboration among companies, institutions, and
+                    startups.</p>
+                <hr class="lightblue">
+                <ol class="ordered-list">
+                    <li><span class="item-bold"><strong>Principle 1</strong></span><br>Thematic panels on green
+                        innovation.</li>
+                    <li><span class="item-bold"><strong>Principle 2</strong></span><br>Networking and mentorship
+                        sessions.</li>
+                    <li><span class="item-bold"><strong>Principle 3</strong></span><br>Awards for outstanding
+                        initiatives.</li>
+                </ol>
+
+                <hr class="lightblue">
+                <p class="bigger">The event concluded with the presentation of a joint manifesto to promote public
+                    policies aligned with circularity principles. Organizers committed to continuing this work annually.
+                </p>
+
+                <p>
+                    The session, organized by Lúcid, EIG, and D!OS, aimed to share knowledge with manufacturing
+                    companies and guide them in the mindset needed to embrace a conceptual shift in the way they design
+                    and market their products.
+                </p>
+
+                <figure class="article-image">
+                    <img src="./assets/images/Circular-Economy.jpg" alt="Ponente en el escenario">
+                    <figcaption>Circular economy scheme</figcaption>
+                </figure>
+
+                <p>
+                    The new action plan announces initiatives along the entire life cycle of products. It targets how
+                    products are designed, promotes circular economy processes, encourages sustainable consumption, and
+                    aims to ensure that waste is prevented and the resources used are kept in the EU economy for as long
+                    as possible.
+                </p>
+            </section>
+        </article>
+
     </div>
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->

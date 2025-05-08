@@ -1,0 +1,106 @@
+.article {
+    padding: 2rem;
+    margin: 0 auto;
+    font-family: $font-family-serif;
+
+    &-image {
+      img {
+        width: 100%;
+        border-radius: 0.5rem;
+      }
+
+      figcaption {
+        font-size: 0.85rem;
+        color: $grey;
+        margin-top: 0.5rem;
+        text-align: center;
+      }
+    }
+
+    &-section {
+        p {
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .blockquote {
+            margin: 2rem 1rem;
+            padding: 1rem;
+            background-color: $light-bg;
+            border-left: 4px solid $blue;
+            font-style: italic;
+            color: $blue;
+        }
+
+        ol {
+            counter-reset: list-counter;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ol li {
+            counter-increment: list-counter;
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 10px;
+        }
+
+        ol li::before {
+            content: counter(list-counter);
+            border: 2px solid lightblue;
+            border-radius: 50%;
+            width: 1.5em;
+            height: 1.5em;
+            position: absolute;
+            left: 0;
+            top: 0;
+            text-align: center;
+        }
+
+        .lightblue{
+            color: $uoc-masterbrand;
+        }
+    }
+  }
+
+  .front{
+    width: 100vw;
+    margin-left: calc(-50vw + 50%); // Centra la imagen respecto a viewport
+    position: relative;
+    height: 100vh; /* Ocupa todo el alto del viewport */
+    overflow: hidden; /* Para evitar que se vea fuera del área */
+  }
+  
+  .front img {
+    width: 100%; /* La imagen ocupará todo el ancho disponible */
+    height: 100%; /* La imagen ocupará todo el alto disponible */
+    object-fit: cover; /* Asegura que la imagen cubra completamente el área sin distorsionarse */
+  }
+
+  .overlay {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+
+  .bigger{
+    font-size: 1.3rem;
+  }
+  
+  .article-section:has(ul) {
+    padding-top: 1.5rem;
+  }
+
+  .article-section :is(h1, h2) {
+    font-family: $font-family-sans-serif;
+    color: $uoc-corporate;
+    padding-top: 2rem;
+  }
+
+  .beetween-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
