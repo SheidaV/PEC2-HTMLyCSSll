@@ -15,11 +15,13 @@
     <include src="./views/header.html"></include>
     <div class="uoc-container">
         <h1 class="uoc-title">Contact</h1>
-        <form name="contact" method="POST" data-netlify="true" onSubmit="submit" data-netlify-honeypot="bot-field">
-            <input class="d-none" name="bot-field"></input>
+        <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+            <input name="form-name" value="contact" type="hidden"></input>
+            <input class="d-none" name="bot-field" type="text"></input>
             <div class="form-group">
                 <label for="exampleInputName">Name</label>
-                <input type="text" class="form-control" id="exampleInputName" name="name" placeholder="Enter Name">
+                <input type="text" class="form-control" id="exampleInputName" name="name" placeholder="Enter Name"
+                    required>
             </div>
             <div class="form-group">
                 <label for="exampleInputLastName">Last Name</label>
@@ -29,11 +31,11 @@
             <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" name="email"
-                    aria-describedby="emailHelp" placeholder="Enter email">
+                    aria-describedby="emailHelp" placeholder="Enter email" required>
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                     else.</small>
                 <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
                     <label class="form-check-label" for="exampleCheck1"> Accepts <a href="#">Terms of Use</a> and
                         understand that information will be used as described in our <a href="#">Privacy Policy</a>.
                     </label>
